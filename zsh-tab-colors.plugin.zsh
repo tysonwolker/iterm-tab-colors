@@ -15,5 +15,7 @@ function automatic_iterm_tab_color_cwd () {
   set_iterm_tab_color blue
 }
 
+automatic_iterm_tab_color_cwd 
 autoload -U add-zsh-hook
 add-zsh-hook chpwd automatic_iterm_tab_color_cwd 
+
