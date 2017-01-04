@@ -1,6 +1,6 @@
 function get_random_rgb_from_cwd () {
   local color=$1;
-  printf $(python -c "import random; import os; random.seed('$color' + os.getcwd()); print random.randint(0,255)")
+  printf $(python -c "import random; import os; random.seed('$color' + os.getcwd()); print (random.randint(0,255)+255)/2")
 }
 
 function set_iterm_tab_color () {
