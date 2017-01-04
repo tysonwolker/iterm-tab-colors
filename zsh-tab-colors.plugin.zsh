@@ -10,9 +10,10 @@ function set_iterm_tab_color () {
 }
 
 function automatic_iterm_tab_color_cwd () {
-  set_iterm_tab_color "red" 
-  set_iterm_tab_color "green"
-  set_iterm_tab_color "blue"
+  local red=$(set_iterm_tab_color "red")
+  local green=$(set_iterm_tab_color "green")
+  local blue=$(set_iterm_tab_color "blue")
+  printf "$red $green $blue"
 }
 
 automatic_iterm_tab_color_cwd 
