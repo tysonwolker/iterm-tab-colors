@@ -27,3 +27,9 @@ Installing with [Zgen](https://github.com/tarjoilija/zgen). Add the following li
 zgen load tysonwolker/iterm-tab-colors
 ```
 
+Installing with [Oh My Zsh](https://ohmyz.sh/):
+```sh
+git clone https://github.com/tysonwolker/iterm-tab-colors.git  ~/.oh-my-zsh/custom/plugins/zsh-tab-colors
+# then add `zsh-tab-colors` to `plugins` in your .zshrc 
+```
+
